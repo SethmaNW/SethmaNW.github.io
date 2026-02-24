@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll(".section");
 const navLinks = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", () => {
@@ -6,8 +6,6 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 150;
-        const sectionHeight = section.clientHeight;
-
         if (scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
